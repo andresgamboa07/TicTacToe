@@ -1,0 +1,48 @@
+body {
+    background: #00F260; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .boton-reinicio {
+    width: 20vw;
+  }
+  
+  .apretar-casilla {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  /* Pantallas medianas o menores */
+  @media (max-width: 768px) {
+    .apretar-casilla {
+      width: 130px;
+      height: 130px;
+    }
+  
+    .tablero {
+      grid-template-columns: repeat(3, 130px);
+      gap: 4px;
+    }
+  }
+  
+  /* Pantallas pequeñas (celulares) */
+  @media (max-width: 480px) {
+    .apretar-casilla {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .tablero {
+      grid-template-columns: repeat(3, 100px);
+      gap: 5px;
+    }
+  }
+  
